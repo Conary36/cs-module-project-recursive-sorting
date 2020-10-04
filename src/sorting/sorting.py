@@ -21,7 +21,15 @@ def merge(arrA, arrB):
 # TO-DO: implement the Merge Sort function below recursively
 def merge_sort(arr):
     # Your code here
+    if len(arr) > 1:
+        mid = len(arr) // 2  # Finding the mid of the array
+        L = arr[:mid]  # Dividing the array elements
+        R = arr[mid:]  # into 2 halves
 
+        merge_sort(L)  # Sorting the first half
+        merge_sort(R)  # Sorting the second half
+
+        merge(L, R) # Combining the sorted halves
 
     return arr
 
@@ -31,6 +39,7 @@ def merge_sort(arr):
 # or data structures; it can only re-use the memory it was given as input
 def merge_in_place(arr, start, mid, end):
     # Your code here
+
 
 
 def merge_sort_in_place(arr, l, r):
