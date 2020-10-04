@@ -13,8 +13,8 @@ def merge(arrA, arrB):
         if i < len(arrA):
             merged_arr += arrB[i]
 
-    while j < len(arrB):
-        merged_arr += arrB[j]
+        elif j < len(arrB):
+            merged_arr += arrB[j]
 
     return merged_arr
 
