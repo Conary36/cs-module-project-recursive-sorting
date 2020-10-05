@@ -25,14 +25,12 @@ def binary_search(arr, target, start, end):
         end changes if we're tossing out the right side of the array
         
         """
-        elif arr[mid] > target:
+        if arr[mid] > target:
             return binary_search(arr, target, start, mid - 1)
         # start changes if we're tossing out the left side of the array
         else:
 
             return binary_search(arr, target, mid + 1, end)
-
-
 
 
 # STRETCH: implement an order-agnostic binary search
@@ -44,4 +42,4 @@ def binary_search(arr, target, start, end):
 def agnostic_binary_search(arr, target):
     # Your code here
 
-      pass
+    pass

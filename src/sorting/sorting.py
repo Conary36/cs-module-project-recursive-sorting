@@ -6,10 +6,10 @@ def merge(arrA, arrB):
     k = 0
     j = 0
     for i in range(elements):
-        if k > len(arrA):
+        if k >= len(arrA):
             merged_arr[i] = arrB[j]
             j += 1
-        elif j > len(arrB):
+        elif j >= len(arrB):
             merged_arr[i] = arrA[k]
             k += 1
         elif arrA[k] < arrB[j]:
